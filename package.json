@@ -1,0 +1,14 @@
+{
+  "name": "miamilanding",
+  "version": "1.0.0",
+  "description": "landing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dombrovskyi D.S",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.69.6"
+  }
+}
