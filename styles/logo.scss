@@ -1,0 +1,10 @@
+.logo {
+  @include onMobile {
+    width: 82px;
+    height: 48px;
+  }
+  @include onComputer {
+    width: 136px;
+    height: 80px;
+  }
+}

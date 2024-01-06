@@ -1,5 +1,36 @@
 @import "./variables.scss";
 .header {
-    
+  @include onMobile {
+    width: 320px;
+    height: 568px;
     background-image: url(../image/backgroundImage/backgroundMiami.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__top-menu {
+      display: flex;
+      justify-content: space-around;
+    }
+    &__image-menu {
+      width: $imageMenu;
+      height: $imageMenu;
+    }
+    &__side-menu {
+      width: $imageMenu;
+      height: $imageMenu;
+    }
+    &__logo-image {
+      width: 82px;
+      height: 48px;
+    }
+  }
+
+  // @include onComputer {
+  //   width: 100%;
+  //   height: 700px;
+  //   background-image: url(../image/backgroundImage/backraundMiamiComputer.png);
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  // }
 }

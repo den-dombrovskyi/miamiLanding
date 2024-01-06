@@ -57,31 +57,21 @@ table {
   border-spacing: 0;
 }
 
+.header {
+  background-image: url(../image/backgroundImage/backgroundMiami.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 @media (min-width: 320px) {
   .header {
     width: 320px;
     height: 568px;
-    background-image: url(../image/backgroundImage/backgroundMiami.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
-  .header__top-menu {
-    display: flex;
-    justify-content: space-around;
-  }
-  .header__image-menu {
-    width: 24px;
-    height: 24px;
-  }
-  .header__side-menu {
-    width: 24px;
-    height: 24px;
-  }
-  .header__logo-image {
-    width: 82px;
-    height: 48px;
-  }
+}
+.header__header__image-menu {
+  width: 24px;
+  height: 24px;
 }
 
 .container {
@@ -91,17 +81,4 @@ table {
   align-items: center;
 }
 
-@media (min-width: 320px) {
-  .logo {
-    width: 82px;
-    height: 48px;
-  }
-}
-@media (min-width: 1260px) {
-  .logo {
-    width: 136px;
-    height: 80px;
-  }
-}
-
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=ctyles.css.map */

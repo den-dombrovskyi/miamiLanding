@@ -1,0 +1,10 @@
+@mixin onMobile {
+  @media (min-width: 320px) {
+    @content;
+  }
+}
+@mixin onComputer {
+    @media (min-width: 1260px) {
+      @content;
+    }
+  }
