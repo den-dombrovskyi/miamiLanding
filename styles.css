@@ -57,6 +57,13 @@ table {
   border-spacing: 0;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (min-width: 320px) {
   .header {
     width: 320px;
@@ -82,13 +89,29 @@ table {
     width: 82px;
     height: 48px;
   }
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  .header__title {
+    display: flex;
+    justify-content: center;
+    margin-top: 330px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -1px;
+  }
+  .header__side {
+    width: 320px;
+    height: 568px;
+    margin-top: -490px;
+    transform: translateX(100%);
+    transition: transform 500ms;
+    background: var(--Blue, #0075FF);
+    position: absolute;
+  }
+  .header__side :target {
+    transform: translateX(0%);
+  }
 }
 
 @media (min-width: 320px) {

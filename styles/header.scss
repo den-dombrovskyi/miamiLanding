@@ -23,6 +23,29 @@
       width: 82px;
       height: 48px;
     }
+    &__title {
+      display: flex;
+      justify-content: center;
+      margin-top: 330px;
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+      font-size: 46px;
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: -1px;
+    }
+    &__side {
+      width: 320px;
+      height: 568px;
+      margin-top: $marginMenu ;
+      transform: translateX(100%);
+      transition: transform 500ms;
+      background: $backgraundMenu;
+      position: absolute;
+    }
+    &__side :target {
+      transform: translateX(-0%);
+    }
   }
 
   // @include onComputer {
