@@ -3,49 +3,59 @@
   @include onMobile {
     width: 320px;
     height: 568px;
+    padding: 24px 20px 80px 20px;
     background-image: url(../image/backgroundImage/backgroundMiami.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    &__main {
+      display:inline-flex;
+      vertical-align: middle;
+    }
     &__top-menu {
       display: flex;
       justify-content: space-around;
     }
-    &__image-menu {
+    &__box-menu {
+      background-image: url(../image/imageMenu.svg);
+      display: block;
       width: $imageMenu;
       height: $imageMenu;
     }
-    &__side-menu {
-      width: $imageMenu;
-      height: $imageMenu;
+    &__box-menu:hover {
+      background-image: url(../image/sideMenu.svg);
+    }
+    &__phone-box:hover::before {
+      display: inline;
+      width: max-content;
+      content: "+1 234 555-55-55";
+      color: #ffffff;
     }
     &__logo-image {
       width: 82px;
       height: 48px;
     }
+  
     &__title {
-      display: flex;
-      justify-content: center;
-      margin-top: 330px;
       color: #fff;
-      font-family: 'Roboto', sans-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 46px;
       font-weight: 700;
       line-height: 40px;
       letter-spacing: -1px;
     }
-    &__side {
-      width: 320px;
-      height: 568px;
-      margin-top: $marginMenu ;
-      transform: translateX(100%);
-      transition: transform 500ms;
-      background: $backgraundMenu;
-      position: absolute;
-    }
-    &__side :target {
-      transform: translateX(-0%);
-    }
+    // &__side {
+    //   width: 320px;
+    //   height: 568px;
+    //   // margin-top: $marginMenu;
+    //   transform: translateX(110%);
+    //   transition: transform 500ms;
+    //   background: $backgraundMenu;
+    //   position: absolute;
+    // }
+    // &__side :target {
+    //   transform: translateX(-0%);
+    // }
   }
 
   // @include onComputer {
