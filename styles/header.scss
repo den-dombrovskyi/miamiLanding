@@ -1,69 +1,81 @@
 @import "./variables.scss";
 .header {
-  @include onMobile {
-    width: 320px;
-    height: 568px;
-    padding: 24px 20px 80px 20px;
-    background-image: url(../image/backgroundImage/backgroundMiami.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    &__main {
-      display:inline-flex;
-      vertical-align: middle;
-    }
-    &__top-menu {
-      display: flex;
-      justify-content: space-around;
-    }
-    &__box-menu {
-      background-image: url(../image/imageMenu.svg);
-      display: block;
-      width: $imageMenu;
-      height: $imageMenu;
-    }
-    &__box-menu:hover {
-      background-image: url(../image/sideMenu.svg);
-    }
-    &__phone-box:hover::before {
-      display: inline;
-      width: max-content;
-      content: "+1 234 555-55-55";
-      color: #ffffff;
-    }
-    &__logo-image {
-      width: 82px;
-      height: 48px;
-    }
-  
-    &__title {
-      color: #fff;
-      font-family: "Roboto", sans-serif;
-      font-size: 46px;
-      font-weight: 700;
-      line-height: 40px;
-      letter-spacing: -1px;
-    }
-    // &__side {
-    //   width: 320px;
-    //   height: 568px;
-    //   // margin-top: $marginMenu;
-    //   transform: translateX(110%);
-    //   transition: transform 500ms;
-    //   background: $backgraundMenu;
-    //   position: absolute;
-    // }
-    // &__side :target {
-    //   transform: translateX(-0%);
-    // }
+  width: 320px;
+  height: 568px;
+  box-sizing: border-box;
+  padding: 24px 20px 90px 20px;
+  background-image: url(../image/backgroundImage/backgroundMiami.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
   }
-
-  // @include onComputer {
-  //   width: 100%;
-  //   height: 700px;
-  //   background-image: url(../image/backgroundImage/backraundMiamiComputer.png);
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
+  &__top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__box-menu {
+    background-image: url(../image/imageMenu.svg);
+    display: block;
+    width: $imageMenu;
+    height: $imageMenu;
+  }
+  &__box-menu:hover {
+    background-image: url(../image/sideMenu.svg);
+  }
+  // &__phone-box:hover::before {
+  //   display: inline;
+  //   width: max-content;
+  //   content: "+1 234 555-55-55";
+  //   color: #ffffff;
+  // }
+  &__phone-image {
+    width: 24px;
+    height: 24px;
+  }
+  &__logo-image {
+    width: 82px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+  }
+  &__title-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 118px;
+  }
+  &__line {
+    width: 40px;
+    height: 2px;
+    display: inline-block;
+    border-radius: 8px;
+    background: #fff;
+  }
+  &__title {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -1px;
+  }
+  // &__side {
+  //   width: 320px;
+  //   height: 568px;
+  //   margin-top: $marginMenu;
+  //   transform: translateX(110%);
+  //   transition: transform 500ms;
+  //   background: $backgraundMenu;
+  //   // position: absolute;
+  // }
+  // &__side :target {
+  //   transform: translateX(-0%);
   // }
 }

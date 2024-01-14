@@ -1,0 +1,14 @@
+@import "./variables.scss";
+.menu {
+  width: 320px;
+  height: 568px;
+  background: var(--Blue, #0075FF);
+  position: fixed;
+  top: 0;
+  transform: translateX(0%);
+  transition: transform 500ms;
+  box-sizing: border-box;
+}
+.menu:target {
+    transform: translateX(100%);
+  }
