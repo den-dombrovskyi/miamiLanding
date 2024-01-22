@@ -1,7 +1,7 @@
 @import "./variables.scss";
 .header {
   width: 320px;
-  height: 568px;
+  height: 100vh;
   box-sizing: border-box;
   padding: 24px 20px 90px 20px;
   background-image: url(../image/backgroundImage/backgroundMiami.png);
@@ -36,8 +36,8 @@
   //   color: #ffffff;
   // }
   &__phone-image {
-    width: 24px;
-    height: 24px;
+    width: $imageMenu;
+    height: $imageMenu;
   }
   &__logo-image {
     width: 82px;
@@ -66,16 +66,4 @@
     line-height: 40px;
     letter-spacing: -1px;
   }
-  // &__side {
-  //   width: 320px;
-  //   height: 568px;
-  //   margin-top: $marginMenu;
-  //   transform: translateX(110%);
-  //   transition: transform 500ms;
-  //   background: $backgraundMenu;
-  //   // position: absolute;
-  // }
-  // &__side :target {
-  //   transform: translateX(-0%);
-  // }
 }
