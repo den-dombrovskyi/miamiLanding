@@ -102,8 +102,6 @@ table {
 .header__logo-image {
   width: 82px;
   height: 48px;
-  display: flex;
-  justify-content: center;
 }
 .header__title-box {
   display: flex;
@@ -154,9 +152,53 @@ table {
   width: 24px;
   height: 24px;
 }
+.menu__logo {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
 .menu__logo-image {
   width: 82px;
   height: 48px;
+}
+.menu__nav {
+  display: flex;
+  flex-direction: column;
+  padding-top: 48px;
+}
+.menu__nav-link {
+  padding-top: 32px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.menu__nav-phone {
+  padding-top: 48px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.menu__nav-call {
+  padding: 16px 0 8px 0;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.menu__nav-line {
+  width: 111px;
+  height: 1px;
+  display: inline-block;
+  border-radius: 8px;
+  background: #fff;
 }
 
 .menu :target {

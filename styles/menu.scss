@@ -11,15 +11,58 @@
   &__top-actions {
     display: flex;
     align-items: center;
-    
   }
   &__close {
     width: $imageMenu;
     height: $imageMenu;
   }
+  &__logo {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
   &__logo-image {
     width: 82px;
     height: 48px;
+  }
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 48px;
+  }
+  &__nav-link {
+    padding-top: 32px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  &__nav-phone {
+    padding-top: 48px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  &__nav-call {
+    padding: 16px 0 8px 0;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  &__nav-line {
+    width: 111px;
+    height: 1px;
+    display: inline-block;
+    border-radius: 8px;
+    background: #fff;
   }
 }
 .menu :target {
