@@ -73,6 +73,7 @@ table {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 1;
 }
 .header__main {
   display: flex;
@@ -138,18 +139,10 @@ table {
   height: 100%;
   box-sizing: border-box;
   padding: 24px 0 106px 20px;
-  top: 0;
-  left: 0;
-  right: 0;
-  transform: translateX(-100%);
+  transform: translateX(100%);
   transition: transform 500ms;
   background: var(--Blue, #0075FF);
-  position: fixed;
-  z-index: 1;
-}
-.menu:target {
-  transform: translateX(0%);
-  overflow: hidden;
+  position: absolute;
 }
 .menu__top-actions {
   display: flex;
@@ -212,4 +205,4 @@ table {
   transform: translateX(-100%);
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=sryles.css.map */
