@@ -9,7 +9,7 @@
   right: 0;
   transform: translateX(-100%);
   transition: transform 500ms;
-  background: $backgraundMenu;
+  background: $backgraundColor;
   position: fixed;
   z-index: 1;
   &:target {

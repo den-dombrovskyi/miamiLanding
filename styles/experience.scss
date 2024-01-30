@@ -1,0 +1,31 @@
+@import "./variables.scss";
+.experience {
+  display: block;
+  &__box-title {
+    display: flex;
+    width: 240px;
+    height: 74px;
+    padding: 0 60px 48px 20px;
+  }
+  &__title-black {
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -1.5px;
+  }
+  &__title-link {
+    color: $backgraundColor;
+    text-decoration: none;
+  }
+  &__subtitle {
+    width: 280px;
+    padding: 0 20px 16px 20px;
+    color: $backgraundColor;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+}

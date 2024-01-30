@@ -124,6 +124,37 @@ table {
   letter-spacing: -1px;
 }
 
+.experience {
+  display: block;
+}
+.experience__box-title {
+  display: flex;
+  width: 240px;
+  height: 74px;
+  padding: 0 60px 48px 20px;
+}
+.experience__title-black {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -1.5px;
+}
+.experience__title-link {
+  color: var(--Blue, #0075FF);
+  text-decoration: none;
+}
+.experience__subtitle {
+  width: 280px;
+  padding: 0 20px 16px 20px;
+  color: var(--Blue, #0075FF);
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
 .logo {
   width: 82px;
   height: 48px;
@@ -131,6 +162,7 @@ table {
 
 .header__container {
   display: flex;
+  margin-bottom: 64px;
 }
 
 .menu {
