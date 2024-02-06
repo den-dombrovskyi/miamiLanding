@@ -28,4 +28,33 @@
     font-weight: 700;
     line-height: 30px;
   }
+  &__box-text {
+    width: 278px;
+    padding: 0 20px 0 20px;
+  }
+  &__top-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $colorText;
+    padding-bottom: $padingBottomText;
+  }
+  &__average-text {
+    width: 294px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $colorText;
+    padding-bottom: $padingBottomText;
+  }
+  &__bottom-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: $colorText;
+    padding-bottom: 40px;
+  }
 }

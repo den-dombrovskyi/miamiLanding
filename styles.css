@@ -154,6 +154,59 @@ table {
   font-weight: 700;
   line-height: 30px;
 }
+.experience__box-text {
+  width: 278px;
+  padding: 0 20px 0 20px;
+}
+.experience__top-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #3E3E3E;
+  padding-bottom: 30px;
+}
+.experience__average-text {
+  width: 294px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #3E3E3E;
+  padding-bottom: 30px;
+}
+.experience__bottom-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #3E3E3E;
+  padding-bottom: 40px;
+}
+
+.gallery {
+  display: block;
+}
+.gallery__box-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 280px;
+  padding: 0 20px 26px 20px;
+}
+.gallery__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -1.5px;
+  text-align: center;
+}
+.gallery__image {
+  width: 24px;
+  height: 24px;
+}
 
 .logo {
   width: 82px;
