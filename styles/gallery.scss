@@ -29,11 +29,16 @@
     display: flex;
     justify-content: space-between;
   }
+  &__box-link {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400px;
+    font-size: $fontSize;
+    color: $colorText;
+  }
   &__link {
-    display: flex;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: $fontSize;
     line-height: 26px;
     color: $backgraundColor;
     text-decoration: none;
