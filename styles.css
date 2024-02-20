@@ -189,9 +189,9 @@ table {
 }
 .gallery__box-title {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   width: 280px;
   padding: 0 20px 26px 20px;
 }
@@ -254,6 +254,42 @@ table {
   border-color: #005ecc;
   background-color: #005ecc;
   box-shadow: 0 14px 28px rgba(0, 84, 182, 0.46);
+}
+
+.testimonials {
+  display: block;
+}
+.testimonials__box-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100hc;
+  margin-bottom: 28px;
+}
+.testimonials__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: -1.5px;
+}
+.testimonials__box-cards {
+  display: block;
+}
+.testimonials__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 24px;
+  margin-bottom: 28px;
+}
+.testimonials__image {
+  width: 100%;
+  grid-column: 2/4;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+.testimonials__image:hover {
+  transform: scale(1.2);
 }
 
 .logo {

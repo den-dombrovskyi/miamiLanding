@@ -1,0 +1,38 @@
+@import "./variables.scss";
+.testimonials {
+  display: block;
+  &__box-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100hc;
+    margin-bottom: 28px;
+  }
+  &__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: -1.5px;
+  }
+  &__box-cards {
+    display: block;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 24px;
+    margin-bottom: 28px;
+  }
+  &__image {
+    width: 100%;
+    grid-column: 2/4;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    
+    &:hover {
+      transform: scale(1.2);
+
+    }
+  }
+}
