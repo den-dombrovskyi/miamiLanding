@@ -1,0 +1,52 @@
+.contact {
+  &__box-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100hc;
+    height: 60px;
+    margin-bottom: 30px;
+  }
+  &__title {
+    width: 280px;
+    height: 36px;
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -1.5px;
+    text-align: center;
+  }
+  &__image-title {
+    width: $imageMenu;
+    height: $imageMenu;
+  }
+  &__info-phone {
+    width: 100hc;
+    height: 62px;
+  }
+  &__text-phone {
+    width: 280px;
+    height: 28px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: $infoColorText;
+  }
+  &__number-phone {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    color: $colorText;
+    text-decoration: none;
+    &:hover {
+      color: $backgraundColor;
+    }
+  }
+}
