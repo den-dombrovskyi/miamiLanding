@@ -4,12 +4,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100hc;
+    width: $widthSection;
     height: 60px;
     margin-bottom: 30px;
   }
   &__title {
-    width: 280px;
+    width: $widthSection;
     height: 36px;
     font-family: "Roboto", sans-serif;
     font-size: 36px;
@@ -23,12 +23,9 @@
     height: $imageMenu;
   }
   &__info-phone {
-    width: 100hc;
-    height: 62px;
+    margin: 0 0 24px;
   }
   &__text-phone {
-    width: 280px;
-    height: 28px;
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -36,6 +33,7 @@
     letter-spacing: 0px;
     text-align: left;
     color: $infoColorText;
+    margin: 0 0 8px;
   }
   &__number-phone {
     font-family: "Roboto", sans-serif;
@@ -45,6 +43,58 @@
     text-align: left;
     color: $colorText;
     text-decoration: none;
+    &:hover {
+      color: $backgraundColor;
+    }
+  }
+  &__info-email {
+    margin: 0 0 24px;
+  }
+  &__text-email {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: $infoColorText;
+    margin: 0 0 8px;
+  }
+  &__email {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    color: $colorText;
+    text-decoration: none;
+    &:hover {
+      color: $backgraundColor;
+    }
+  }
+  &__info-address {
+    margin: 0 0 32px;
+  }
+  &__text-address {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: $infoColorText;
+    margin: 0 0 8px;
+  }
+  &__address-link {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: $colorText;
+    text-decoration: none;
+   
     &:hover {
       color: $backgraundColor;
     }
