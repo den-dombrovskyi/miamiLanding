@@ -125,22 +125,31 @@ table {
   letter-spacing: -1px;
 }
 
-.experience {
-  display: block;
-}
-.experience__box-title {
-  display: flex;
-  width: 240px;
-  height: 74px;
-  padding: 0 60px 48px 20px;
-}
-.experience__title-black {
-  color: #000;
+.section__title {
   font-family: "Roboto", sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
   letter-spacing: -1.5px;
+}
+
+.section-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -1.5px;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.experience__box-title {
+  display: flex;
+  width: 240px;
+  height: 74px;
+  padding: 0 60px 48px 20px;
 }
 .experience__title-link {
   color: var(--Blue, #0075ff);
@@ -195,14 +204,6 @@ table {
   align-items: center;
   width: 280px;
   padding: 0 20px 26px 20px;
-}
-.gallery__title {
-  font-family: "Roboto", sans-serif;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 36px;
-  letter-spacing: -1.5px;
-  text-align: center;
 }
 .gallery__image {
   width: 24px;
@@ -267,12 +268,6 @@ table {
   align-items: center;
   width: 100hc;
   margin-bottom: 28px;
-}
-.testimonials__title {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  letter-spacing: -1.5px;
 }
 .testimonials__cards {
   display: flex;
@@ -343,16 +338,6 @@ table {
   width: 100hc;
   height: 60px;
   margin-bottom: 30px;
-}
-.contact__title {
-  width: 100hc;
-  height: 36px;
-  font-family: "Roboto", sans-serif;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 36px;
-  letter-spacing: -1.5px;
-  text-align: center;
 }
 .contact__image-title {
   width: 24px;

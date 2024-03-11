@@ -1,0 +1,10 @@
+@import "./variables.scss";
+.section {
+  &__title {
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -1.5px;
+  }
+}
