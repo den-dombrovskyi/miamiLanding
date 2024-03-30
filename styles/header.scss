@@ -8,6 +8,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
   &__main {
     display: flex;
     flex-direction: column;
@@ -28,12 +29,15 @@
   &__box-menu:hover {
     background-image: url(../image/sideMenu.svg);
   }
-  // &__phone-box:hover::before {
+  // @mixin bigScreen {
+  //   &__phone-box:hover::before {
   //   display: inline;
   //   width: max-content;
   //   content: "+1 234 555-55-55";
   //   color: #ffffff;
   // }
+  // }
+  
   &__phone-image {
     width: $imageMenu;
     height: $imageMenu;

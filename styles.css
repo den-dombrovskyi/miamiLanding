@@ -194,20 +194,28 @@ table {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 280px;
-  padding: 0 20px 26px 20px;
+  margin-bottom: 29px;
 }
-.gallery__image {
+.gallery__logo-image {
+  display: inline-block;
   width: 24px;
   height: 24px;
 }
-.gallery__box-mix {
-  width: 280px;
-  padding: 0 20px 32px 20px;
+.gallery__box-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
 }
 .gallery__box-photo {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+.gallery__photo {
+  width: 131px;
+  height: 131px;
 }
 .gallery__box-link {
   font-family: "Roboto", sans-serif;
@@ -229,7 +237,6 @@ table {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100hc;
 }
 .testimonials__cards {
   display: flex;
@@ -417,7 +424,7 @@ table {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 100vh;
   height: 206px;
   justify-content: center;
   align-items: flex-end;
@@ -525,7 +532,7 @@ table {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  width: 100%;
+  width: 223px;
   height: 56px;
   color: var(--Blue, #0075ff);
   border: 2px solid var(--Blue, #0075ff);
