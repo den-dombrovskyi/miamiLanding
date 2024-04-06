@@ -1,28 +1,22 @@
 @import "./variables.scss";
 .button {
-  &__a-link {
-    text-decoration: none;
-  }
-  &__a-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    width: 223px;
-    height: 56px;
-    color: $backgraundColor;
-    border: 2px solid $backgraundColor;
-    border-radius: 8px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700px;
-    font-size: 16px;
-    line-height: 14px;
-    transition: all 0.4s;
-    &:hover {
-      color: white;
-      border-color: #005ecc;
-      background-color: #005ecc;
-      box-shadow: 0 14px 28px rgba(0, 84, 182, 0.46);
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 223px;
+  height: 56px;
+  color: $backgraundColor;
+  border: 2px solid $backgraundColor;
+  border-radius: 8px;
+  font-weight: 700px;
+  font-size: 16px;
+  line-height: 14px;
+  transition: all 0.4s;
+  &:hover {
+    color: white;
+    border-color: #005ecc;
+    background-color: #005ecc;
+    box-shadow: 0 14px 28px rgba(0, 84, 182, 0.46);
   }
 }

@@ -1,13 +1,9 @@
 @import "./variables.scss";
-* {
-  font-family: "Roboto", sans-serif;
-}
 .experience {
   &__box-title {
-    display: flex;
     width: 240px;
     height: 74px;
-    padding: 0 60px 48px 20px;
+    padding-bottom: 48px;
   }
   &__title-link {
     color: $backgraundColor;
@@ -15,19 +11,16 @@
   }
   &__subtitle {
     width: 280px;
-    padding: 0 20px 16px 20px;
+    padding-bottom: 16px;
     color: $backgraundColor;
-    font-family: "Roboto", sans-serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
   }
   &__box-text {
-    width: 278px;
-    padding: 0 20px 0 20px;
+    width: 280px;
   }
   &__top-text {
-    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
@@ -35,8 +28,7 @@
     padding-bottom: $padingBottomText;
   }
   &__average-text {
-    width: 294px;
-    font-family: "Roboto", sans-serif;
+    width: 280px;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
@@ -44,7 +36,6 @@
     padding-bottom: $padingBottomText;
   }
   &__bottom-text {
-    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 26px;

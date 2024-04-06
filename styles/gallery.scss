@@ -1,7 +1,4 @@
 @import "./variables.scss";
-* {
-  font-family: "Roboto", sans-serif;
-}
 .gallery {
   &__box-title {
     display: flex;
@@ -11,7 +8,6 @@
     margin-bottom: 29px;
   }
   &__logo-image {
-    display: inline-block;
     width: 24px;
     height: 24px;
   }
@@ -28,17 +24,20 @@
     margin-bottom: 16px;
   }
   &__photo {
+    display: block;
     width: 131px;
     height: 131px;
+    @include onDesktop {
+      width: 231px;
+      height: 231px;
+    }
   }
   &__box-link {
-    font-family: "Roboto", sans-serif;
     font-weight: 400px;
     font-size: $fontSize;
     color: $colorText;
   }
   &__link {
-    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: $fontSize;
     line-height: 26px;

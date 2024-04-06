@@ -13,7 +13,7 @@
     height: $imageMenu;
   }
   &__info-phone {
-    margin: 0 0 24px;
+    margin-bottom: 24px;
   }
   &__text-phone {
     font-family: "Roboto", sans-serif;
@@ -23,7 +23,7 @@
     letter-spacing: 0px;
     text-align: left;
     color: $infoColorText;
-    margin: 0 0 8px;
+    margin-bottom: 8px;
   }
   &__number-phone {
     font-family: "Roboto", sans-serif;
@@ -38,7 +38,7 @@
     }
   }
   &__info-email {
-    margin: 0 0 24px;
+    margin-bottom: 24px;
   }
   &__text-email {
     font-family: "Roboto", sans-serif;
@@ -63,7 +63,7 @@
     }
   }
   &__info-address {
-    margin: 0 0 32px;
+    margin-bottom: 32px;
   }
   &__text-address {
     font-family: "Roboto", sans-serif;

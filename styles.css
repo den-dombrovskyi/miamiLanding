@@ -58,15 +58,15 @@ table {
 }
 
 .container {
+  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
 }
 
 .header {
-  width: 320px;
+  width: 100%;
   height: 100vh;
   box-sizing: border-box;
   padding: 24px 20px 90px 20px;
@@ -122,26 +122,23 @@ table {
 }
 
 .section {
-  padding: 64px 20px 0 20px;
+  box-sizing: border-box;
+  padding-top: 64px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .section-title {
-  font-family: "Roboto", sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
   letter-spacing: -1.5px;
 }
 
-* {
-  font-family: "Roboto", sans-serif;
-}
-
 .experience__box-title {
-  display: flex;
   width: 240px;
   height: 74px;
-  padding: 0 60px 48px 20px;
+  padding-bottom: 48px;
 }
 .experience__title-link {
   color: var(--Blue, #0075ff);
@@ -149,19 +146,16 @@ table {
 }
 .experience__subtitle {
   width: 280px;
-  padding: 0 20px 16px 20px;
+  padding-bottom: 16px;
   color: var(--Blue, #0075ff);
-  font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
 }
 .experience__box-text {
-  width: 278px;
-  padding: 0 20px 0 20px;
+  width: 280px;
 }
 .experience__top-text {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -169,8 +163,7 @@ table {
   padding-bottom: 30px;
 }
 .experience__average-text {
-  width: 294px;
-  font-family: "Roboto", sans-serif;
+  width: 280px;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -178,15 +171,10 @@ table {
   padding-bottom: 30px;
 }
 .experience__bottom-text {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 26px;
   color: #3e3e3e;
-}
-
-* {
-  font-family: "Roboto", sans-serif;
 }
 
 .gallery__box-title {
@@ -197,7 +185,6 @@ table {
   margin-bottom: 29px;
 }
 .gallery__logo-image {
-  display: inline-block;
   width: 24px;
   height: 24px;
 }
@@ -214,17 +201,22 @@ table {
   margin-bottom: 16px;
 }
 .gallery__photo {
+  display: block;
   width: 131px;
   height: 131px;
 }
+@media (min-width: 1260px) {
+  .gallery__photo {
+    width: 231px;
+    height: 231px;
+  }
+}
 .gallery__box-link {
-  font-family: "Roboto", sans-serif;
   font-weight: 400px;
   font-size: 16px;
   color: #3e3e3e;
 }
 .gallery__link {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 26px;
@@ -250,7 +242,8 @@ table {
   margin-bottom: 28px;
 }
 .testimonials__image {
-  width: 100%;
+  width: 153px;
+  height: 153px;
   grid-column: 2/4;
   border-radius: 50%;
   transition: transform 0.3s;
@@ -301,7 +294,7 @@ table {
   height: 24px;
 }
 .contact__info-phone {
-  margin: 0 0 24px;
+  margin-bottom: 24px;
 }
 .contact__text-phone {
   font-family: "Roboto", sans-serif;
@@ -311,7 +304,7 @@ table {
   letter-spacing: 0px;
   text-align: left;
   color: #9fadc2;
-  margin: 0 0 8px;
+  margin-bottom: 8px;
 }
 .contact__number-phone {
   font-family: "Roboto", sans-serif;
@@ -326,7 +319,7 @@ table {
   color: var(--Blue, #0075ff);
 }
 .contact__info-email {
-  margin: 0 0 24px;
+  margin-bottom: 24px;
 }
 .contact__text-email {
   font-family: "Roboto", sans-serif;
@@ -351,7 +344,7 @@ table {
   color: var(--Blue, #0075ff);
 }
 .contact__info-address {
-  margin: 0 0 32px;
+  margin-bottom: 32px;
 }
 .contact__text-address {
   font-family: "Roboto", sans-serif;
@@ -424,7 +417,7 @@ table {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100vh;
+  width: 100%;
   height: 206px;
   justify-content: center;
   align-items: flex-end;
@@ -524,10 +517,7 @@ table {
   color: var(--Blue, #0075ff);
 }
 
-.button__a-link {
-  text-decoration: none;
-}
-.button__a-button {
+.button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -537,13 +527,12 @@ table {
   color: var(--Blue, #0075ff);
   border: 2px solid var(--Blue, #0075ff);
   border-radius: 8px;
-  font-family: "Roboto", sans-serif;
   font-weight: 700px;
   font-size: 16px;
   line-height: 14px;
   transition: all 0.4s;
 }
-.button__a-button:hover {
+.button:hover {
   color: white;
   border-color: #005ecc;
   background-color: #005ecc;

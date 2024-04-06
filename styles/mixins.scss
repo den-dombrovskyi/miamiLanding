@@ -1,11 +1,6 @@
 @import "./variables.scss";
-@mixin onMobile {
-  @media (min-width: 320px) {
+@mixin  onDesktop {
+  @media (min-width: 1260px) {
     @content;
-  }
-}
-@mixin bigScreen {
-    @media (min-width: 1260px) {
-      @content;
-    }
+  } 
   }
