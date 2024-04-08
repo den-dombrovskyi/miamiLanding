@@ -1,13 +1,16 @@
 @import "./variables.scss";
 .header {
-  width: 100%;
   height: 100vh;
   box-sizing: border-box;
   padding: 24px 20px 90px 20px;
-  background-image: url(../image/backgroundImage/backgroundMiami.png);
+  background-image: url(../image/backgroundImage/backraundMiami\ onDesktop.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  @include onDesktop {
+   width: 100vh;
+    padding: 24px 120px 80px 120px;
+  }
 
   &__main {
     display: flex;
@@ -29,18 +32,32 @@
   &__box-menu:hover {
     background-image: url(../image/sideMenu.svg);
   }
-  // @mixin bigScreen {
-  //   &__phone-box:hover::before {
-  //   display: inline;
-  //   width: max-content;
-  //   content: "+1 234 555-55-55";
-  //   color: #ffffff;
-  // }
-  // }
-  
+  @include onDesktop {
+    &__phone-box::before {
+      width: max-content;
+      transform: translate(-100%, 50%);
+      top: -100%;
+      // content: "+1 234 555-55-55";
+      color: #fff;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 12px;
+      opacity: 0;
+      pointer-events: none;
+    }
+    &__phone-box:hover::before {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+
   &__phone-image {
     width: $imageMenu;
     height: $imageMenu;
+    @include onDesktop  {
+      width: 32px;
+      height: 32px;
+    }
   }
   &__title-box {
     display: flex;

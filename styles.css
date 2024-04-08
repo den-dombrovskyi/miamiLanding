@@ -66,14 +66,19 @@ table {
 }
 
 .header {
-  width: 100%;
   height: 100vh;
   box-sizing: border-box;
   padding: 24px 20px 90px 20px;
-  background-image: url(../image/backgroundImage/backgroundMiami.png);
+  background-image: url(../image/backgroundImage/backraundMiami\ onDesktop.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (min-width: 1260px) {
+  .header {
+    width: 100vh;
+    padding: 24px 120px 80px 120px;
+  }
 }
 .header__main {
   display: flex;
@@ -95,9 +100,32 @@ table {
 .header__box-menu:hover {
   background-image: url(../image/sideMenu.svg);
 }
+@media (min-width: 1260px) {
+  .header__phone-box::before {
+    width: max-content;
+    transform: translate(-100%, 50%);
+    top: -100%;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .header__phone-box:hover::before {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
 .header__phone-image {
   width: 24px;
   height: 24px;
+}
+@media (min-width: 1260px) {
+  .header__phone-image {
+    width: 32px;
+    height: 32px;
+  }
 }
 .header__title-box {
   display: flex;
@@ -428,6 +456,12 @@ table {
 .logo {
   width: 82px;
   height: 48px;
+}
+@media (min-width: 1260px) {
+  .logo {
+    width: 136px;
+    height: 80px;
+  }
 }
 
 .header__container {
