@@ -97,6 +97,12 @@ table {
   width: 24px;
   height: 24px;
 }
+@media (min-width: 1260px) {
+  .header__box-menu {
+    width: 32px;
+    height: 32px;
+  }
+}
 .header__box-menu:hover {
   background-image: url(../image/sideMenu.svg);
 }
@@ -133,6 +139,11 @@ table {
   justify-content: space-around;
   height: 118px;
 }
+@media (min-width: 1260px) {
+  .header__title-box {
+    height: 210px;
+  }
+}
 .header__line {
   width: 40px;
   height: 2px;
@@ -142,11 +153,16 @@ table {
 }
 .header__title {
   color: #fff;
-  font-family: "Roboto", sans-serif;
   font-size: 46px;
   font-weight: 700;
   line-height: 40px;
   letter-spacing: -1px;
+}
+@media (min-width: 1260px) {
+  .header__title {
+    font-size: 80px;
+    line-height: 80px;
+  }
 }
 
 .section {
@@ -163,10 +179,22 @@ table {
   letter-spacing: -1.5px;
 }
 
+@media (min-width: 1260px) {
+  .experience {
+    display: flex;
+    gap: 80px;
+  }
+}
 .experience__box-title {
   width: 240px;
   height: 74px;
   padding-bottom: 48px;
+}
+@media (min-width: 1260px) {
+  .experience__title-black {
+    font-size: 48px;
+    line-height: 48px;
+  }
 }
 .experience__title-link {
   color: var(--Blue, #0075ff);
@@ -180,8 +208,18 @@ table {
   font-weight: 700;
   line-height: 30px;
 }
+@media (min-width: 1260px) {
+  .experience__subtitle {
+    width: 410px;
+  }
+}
 .experience__box-text {
   width: 280px;
+}
+@media (min-width: 1260px) {
+  .experience__box-text {
+    width: 410px;
+  }
 }
 .experience__top-text {
   font-weight: 400;
@@ -198,11 +236,21 @@ table {
   color: #3e3e3e;
   padding-bottom: 30px;
 }
+@media (min-width: 1260px) {
+  .experience__average-text {
+    width: 410px;
+  }
+}
 .experience__bottom-text {
   font-weight: 700;
   font-size: 16px;
   line-height: 26px;
   color: #3e3e3e;
+}
+@media (min-width: 1260px) {
+  .experience__bottom-text {
+    width: 238px;
+  }
 }
 
 .gallery__box-title {

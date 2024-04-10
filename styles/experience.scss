@@ -1,9 +1,19 @@
 @import "./variables.scss";
 .experience {
+  @include onDesktop {
+    display: flex;
+    gap: 80px;
+  }
   &__box-title {
     width: 240px;
     height: 74px;
     padding-bottom: 48px;
+  }
+  &__title-black {
+    @include onDesktop {
+      font-size: 48px;
+      line-height: 48px;
+    }
   }
   &__title-link {
     color: $backgraundColor;
@@ -16,9 +26,15 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
+    @include onDesktop {
+      width: 410px;
+    }
   }
   &__box-text {
     width: 280px;
+    @include onDesktop {
+      width: 410px;
+    }
   }
   &__top-text {
     font-weight: 400;
@@ -34,12 +50,17 @@
     line-height: 26px;
     color: $colorText;
     padding-bottom: $padingBottomText;
+    @include onDesktop {
+      width: 410px;
+    }
   }
   &__bottom-text {
     font-weight: 700;
     font-size: 16px;
     line-height: 26px;
     color: $colorText;
-    
+    @include onDesktop {
+      width: 238px;
+    }
   }
 }
