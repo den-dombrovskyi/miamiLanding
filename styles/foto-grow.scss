@@ -1,0 +1,6 @@
+.foto-grow {
+  @include onDesktop {
+    height: 256px;
+    flex-grow: 1;
+  }
+}

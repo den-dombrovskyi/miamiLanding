@@ -1,0 +1,6 @@
+.foto-sqare {
+  @include onDesktop {
+    width: 324px;
+    height: 256px;
+  }
+}
