@@ -132,4 +132,12 @@
       color: #8f99a8;
     }
   }
+  &__button {
+    width: $widthButton;
+    height: $heightButton;
+    @include onDesktop {
+      width: 411px;
+      height: 56px;
+    }
+  }
 }

@@ -6,16 +6,28 @@
     justify-content: center;
     align-items: center;
   }
+  &__box-cards {
+    @include onDesktop {
+      display: flex;
+      gap: 24px;
+    }
+  }
   &__cards {
     display: flex;
     flex-direction: column;
+    @include onDesktop {
+      width: 324px;
+    }
   }
   &__box-image {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 24px;
-    margin-top: 48px;
+    margin-top: 29px;
     margin-bottom: 28px;
+    @include onDesktop {
+      margin-top: 56px;
+    }
   }
   &__image {
     width: 153px;
@@ -23,6 +35,10 @@
     grid-column: 2/4;
     border-radius: 50%;
     transition: transform 0.3s;
+    @include onDesktop {
+      width: 150px;
+      height: 150px;
+    }
 
     &:hover {
       transform: scale(1.2);

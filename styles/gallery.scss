@@ -43,4 +43,12 @@
     color: $backgraundColor;
     text-decoration: none;
   }
+  &__button {
+    width: $widthButton;
+    height: $heightButton;
+    @include onDesktop {
+      width: 150px;
+      height: 56px;
+    }
+  }
 }
