@@ -109,8 +109,6 @@ table {
 @media (min-width: 1260px) {
   .header__phone-box::before {
     width: max-content;
-    transform: translate(-100%, 50%);
-    top: -100%;
     content: "+1 234 555-55-55";
     color: #fff;
     letter-spacing: 2px;
@@ -272,6 +270,11 @@ table {
   align-items: center;
   margin-bottom: 29px;
 }
+@media (min-width: 1260px) {
+  .gallery__box-title {
+    margin-bottom: 56px;
+  }
+}
 .gallery__logo-image {
   width: 24px;
   height: 24px;
@@ -422,9 +425,20 @@ table {
   height: 60px;
   margin-bottom: 30px;
 }
+@media (min-width: 1260px) {
+  .contact__box-title {
+    margin-bottom: 69px;
+  }
+}
 .contact__image-title {
   width: 24px;
   height: 24px;
+}
+@media (min-width: 1260px) {
+  .contact__big-box {
+    display: flex;
+    gap: 198px;
+  }
 }
 .contact__info-phone {
   margin-bottom: 24px;
@@ -510,6 +524,11 @@ table {
   background-color: #f7f8ff;
   border-radius: 8px;
 }
+@media (min-width: 1260px) {
+  .contact__input {
+    width: 411px;
+  }
+}
 .contact__input:hover {
   border-color: #ccd0e0;
 }
@@ -556,7 +575,7 @@ table {
 
 .footer {
   display: flex;
-  background-image: url(../image/backgroundImage/backgroundFooter.png);
+  background-image: url(../image/backgroundImage/backraundFooter.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -609,6 +628,12 @@ table {
   width: 24px;
   height: 24px;
 }
+@media (min-width: 1260px) {
+  .menu__close {
+    width: 32px;
+    height: 32px;
+  }
+}
 .menu__logo {
   width: 80%;
   display: flex;
@@ -617,6 +642,12 @@ table {
 .menu__logo-image {
   width: 82px;
   height: 48px;
+}
+@media (min-width: 1260px) {
+  .menu__logo-image {
+    width: 136px;
+    height: 80px;
+  }
 }
 .menu__nav {
   display: flex;

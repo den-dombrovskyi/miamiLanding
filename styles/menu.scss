@@ -11,7 +11,7 @@
   transition: transform 500ms;
   background: $backgraundColor;
   position: fixed;
-  
+
   &:target {
     transform: translateX(0%);
     overflow: hidden;
@@ -23,6 +23,10 @@
   &__close {
     width: $imageMenu;
     height: $imageMenu;
+    @include onDesktop {
+      width: 32px;
+      height: 32px;
+    }
   }
   &__logo {
     width: 80%;
@@ -32,6 +36,10 @@
   &__logo-image {
     width: 82px;
     height: 48px;
+    @include onDesktop {
+      width: 136px;
+      height: 80px;
+    }
   }
   &__nav {
     display: flex;

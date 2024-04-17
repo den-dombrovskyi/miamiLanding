@@ -6,6 +6,9 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 29px;
+    @include onDesktop {
+      margin-bottom: 56px;
+    }
   }
   &__logo-image {
     width: 24px;
