@@ -8,3 +8,4 @@ Layout supports all mobile and desktop versions
 - [Sass (Scss)](https://sass-lang.com/)
 - [BEM methodology](https://en.bem.info/methodology/)
 ### Author
+Denis Dombrovskyi
