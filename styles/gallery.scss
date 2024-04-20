@@ -24,15 +24,23 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+    overflow: hidden;
     margin-bottom: 16px;
     @include onDesktop {
       width: 1020px;
     }
   }
   &__photo {
-    display: block;
     width: 131px;
     height: 131px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
   &__box-link {
     font-weight: 400px;
